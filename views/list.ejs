@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="box" id="heading">
+        <h1> <%= kindOfDays %></h1>
+    </div>
+
+    <div class="box">
+        
+        <% for (var i=0; i<New.length; i++){ %>
+            <div class="item">
+                <input type="checkbox" >
+                <p><%= New[i] %></p>
+            </div>
+          
+        <% } %>
+           
+        <form class="items" action="/" method="post">
+            <input type="text" name="newItem" placeholder="Enter a New Task">
+            <button type="submit" name="button">+</button>
+        </form>
+    </div>
+
+
+   
+</body>
+</html>
